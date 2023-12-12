@@ -1,0 +1,1088 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.sky {
+    overflow-x: hidden;
+    position: relative;
+    background-image: linear-gradient(#F3BADB, #F6D19C);
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10%;
+}
+
+.sky img {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+#cloud-one {
+    width: 20%;
+    bottom: 40%;
+    left: 75%;
+}
+
+#cloud-two {
+    width: 25%;
+    bottom: 80%;
+    left: 70%;
+}
+
+#cloud-three {
+    width: 30%;
+    bottom: 60%;
+    left: 0%;
+}
+
+#cloud-four {
+    width: 24%;
+    bottom: 70%;
+    margin-right: 40%;
+    left: 20%;
+}
+
+#cloud-five {
+    width: 23%;
+    bottom: 60%;
+    left: 60%;
+}
+
+
+#air-balloon {
+    width: 10%;
+    bottom: 10%;
+    min-height: 3.5vh;
+}
+
+
+.about-me {
+    height: 600px;
+    background-color: #69D31D;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+}
+
+header {
+    background-color: #69D31D;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    max-height: fit-content;
+}
+
+header {
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 55px;
+    justify-content: center;
+    max-height: fit-content;
+
+
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    /* Slight transparency to blend with the background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Creates consistent spacing between form elements */
+}
+
+.form-group label {
+    font-family: 'Lobster', cursive;
+    color: #333;
+    /* Dark text for readability */
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    border: 2px solid #69D31D;
+    /* Border color to match the header and about-me section */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    /* Larger font-size for readability */
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: #69D31D;
+    /* Match the color of the header */
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #57b10f;
+    /* Darker shade when hovered */
+}
+
+.contact-form h1 {
+    text-align: center;
+    color: #333;
+    /* or any color that matches your design */
+    font-family: 'Lobster', cursive;
+    margin-bottom: 20px;
+    /* adds some space between the title and the form fields */
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    /* ... your existing styles ... */
+    align-items: center;
+    /* This will center the flex items horizontally */
+}
+
+.contact-form form {
+    width: 100%;
+    /* Make the form take up the full width of its parent */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group input {
+    width: 100%;
+    /* Full width of the form group */
+    /* ... your existing input styles ... */
+}
+
+button {
+    width: 100%;
+    /* Full width of the form group */
+    /* ... your existing button styles ... */
+    height: 25%;
+    margin-top: 10px;
+}
+
+/* Existing styles */
+
+/* About Me section */
+.about-me {
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #69D31D;
+    /* Removed redundant 'height: 600px;' to let the content dictate the height */
+}
+
+.about-me h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about-me p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+
+/* Portfolio section */
+.portfolio {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: linear-gradient(#F3BADB, #F6D19C);
+}
+
+.portfolio h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.portfolio .project {
+    margin-bottom: 30px;
+}
+
+.portfolio .project img {
+    width: 100%;
+    height: auto;
+    /* Keep the aspect ratio of the image */
+    border-radius: 8px;
+}
+
+.portfolio .project h3 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.portfolio .project p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* About Me section */
+.about-me {
+    position: relative;
+    /* This makes it a positioning context for absolute children */
+    margin: 0;
+    /* Full width */
+    padding: 20px 0;
+    /* Padding top and bottom, no padding left and right */
+    text-align: center;
+    background-color: #69D31D;
+}
+
+.about-me h2 {
+    position: absolute;
+    /* Positioning the title absolutely */
+    top: 0;
+    /* Adjust this value to place the title over the paragraph */
+    left: 50%;
+    /* Centers the title horizontally */
+    transform: translateX(-50%);
+    /* Ensures exact center alignment */
+    color: #333;
+    margin-top: 0;
+    /* Remove margin-top if any */
+    z-index: 10;
+    /* Ensure it's above the paragraph */
+}
+
+.about-me p {
+    /* Make sure the paragraph has enough top padding to not be overlapped entirely */
+    padding-top: 70px;
+    /* Adjust this value based on the size of your h2 */
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Optional: Add background to make text readable */
+    padding: 20px;
+    /* Add padding to maintain spacing */
+}
+
+.project h3 a {
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.about-me {
+    text-align: center;
+    /* Center align the content */
+}
+
+.about-me img.about-me-image {
+    max-width: 100%;
+    /* Ensure the image is responsive and doesn't overflow */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Makes the image a block-level element */
+    margin: 0 auto 20px;
+    /* Center the image and add space beneath it */
+    float: left;
+    /* Float the image to the left */
+    margin-right: 20px;
+    /* Add some space between the image and the text */
+    width: 200px;
+    /* Set a fixed width or max-width */
+    height: auto;
+    margin-top: 30px;
+}
+
+.about-me {
+    font-family: '', cursive;
+    color: #333;
+    overflow: hidden;
+}
+
+.about-me img.about-me-image {
+    float: left;
+    /* Float the image to the left */
+    margin-right: 20px;
+    /* Add some space between the image and the text */
+    width: 200px;
+    /* Set a fixed width or max-width */
+    height: auto;
+    /* Maintain the aspect ratio of the image */
+}
+
+.about-me p {
+
+
+    .about-me-content {
+        display: flex;
+        /* Use Flexbox to align items side by side */
+        align-items: center;
+        /* This centers the items vertically */
+    }
+
+    .about-me-image {
+        max-width: 200px;
+        /* Set a maximum width for the image */
+        margin-right: 20px;
+        /* Add some space between the image and the text */
+    }
+
+    .about-me p {
+        /* Your styles for the paragraph */
+        flex: 1;
+        /* This will allow the paragraph to take up the remaining space */
+    }
+
+    /* This ensures that the paragraph respects the floating image */
+}
+
+
+.about-me-content {
+    display: flex;
+    /* Use Flexbox to align items side by side */
+    align-items: center;
+    /* This centers the items vertically */
+}
+
+.about-me-image {
+    max-width: 200px;
+    /* Set a maximum width for the image */
+    margin-right: 20px;
+    /* Add some space between the image and the text */
+    margin-left: 30px;
+}
+
+.about-me p {
+    /* Your styles for the paragraph */
+    flex: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #69D31D;
+}
+
+.about-me-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1200px;
+    /* or whatever max-width you prefer */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about-me-image {
+    flex: 0 0 auto;
+    /* Do not grow or shrink */
+    width: 200px;
+    /* Set a fixed width for the image */
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+.about-me p {
+    flex: 1;
+    /* Allow the paragraph to grow and fill the remaining space */
+    margin-left: 10px;
+    /* Adjust as needed */
+    margin-right: 10px;
+    /* Adjust as needed */
+    text-align: left;
+    /* Align text to the left */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .about-me-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me-image {
+        width: 80%;
+        /* Adjust the width on smaller screens */
+        margin-bottom: 20px;
+        /* Add space between the image and text on smaller screens */
+    }
+
+    .about-me p {
+        text-align: center;
+        /* Center-align text on smaller screens */
+    }
+}
+
+.about-me-content {
+    display: flex;
+    /* Use Flexbox to align items side by side */
+    align-items: center;
+    /* This centers the items vertically */
+    flex-wrap: wrap;
+    /* This allows items to wrap onto the next line */
+    justify-content: center;
+    /* Centers the content horizontally */
+    gap: 20px;
+    /* Optional: Adds space between flex items */
+}
+
+.about-me h2 {
+    flex: 1 1 auto;
+    /* Allows the title to shrink and grow but not overflow */
+    margin: 0;
+    /* Adjust or remove margins as needed */
+}
+
+.about-me img.about-me-image {
+    flex: 0 0 auto;
+    /* Do not allow the image to grow or shrink */
+    max-width: 200px;
+    /* Adjust the max-width as necessary */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-right: 20px;
+    /* Add some space between the image and the text, if needed */
+}
+
+/* Remove any unnecessary absolute positioning from .about-me h2 and related styles */
+
+/* Make sure the paragraph does not stretch beyond its content */
+.about-me p {
+    max-width: 600px;
+    /* Or any maximum width that fits your design */
+    margin: 0 auto;
+    /* Center the paragraph if there's space on the sides */
+}
+
+/* Existing Styles */
+.about-me-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-me h2 {
+    flex: 1 1 auto;
+    margin: 0;
+}
+
+.about-me img.about-me-image {
+    flex: 0 0 auto;
+    max-width: 100%;
+    /* Make sure the image is responsive and does not overflow */
+    height: auto;
+    margin-right: 20px;
+}
+
+.about-me p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Media Query for iPhone screen sizes */
+@media screen and (max-width: 480px) {
+
+    /* Adjust the max-width as needed for your design */
+    .about-me-content {
+        flex-direction: column;
+        /* Stack the flex items vertically */
+        align-items: stretch;
+        /* Stretch the flex items to fill the container */
+    }
+
+    .about-me h2 {
+        margin-top: 20%;
+    }
+
+    .about-me img.about-me-image {
+        width: 100%;
+        /* Full width on small screens */
+        margin: 0 0 20px 0;
+        /* Adjust margin to only add space below the image */
+    }
+
+}
+
+/* Base styles for larger screens */
+.header-title {
+    font-size: 2.5em;
+    /* Adjust the size as needed for larger screens */
+    margin: 0;
+    padding: 0;
+    /* Any other styling you have */
+}
+
+/* Responsive adjustments for smaller screens with a media query */
+@media screen and (max-width: 800px) {
+
+    /* This covers iPhone-sized screens */
+    .header-title {
+        font-size: 1.5em;
+        /* Smaller font size for small screens */
+        /* Additional adjustments if needed */
+    }
+}
+
+/* Assuming you have a class for the 'About Me' heading */
+.about-me-title {
+    margin-top: 30px;
+}
+
+/* Media query for iPhone-sized screens */
+@media screen and (max-width: 480px) {
+    .about-me-title {
+        font-size: 1.2em;
+        /* Reduce the size on small screens */
+        margin-top: 20px;
+        /* Add more space if needed */
+        /* Additional styling to prevent overlap */
+    }
+
+    .profile-image {
+        width: 100%;
+        /* Make the image responsive */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin-top: 20px;
+    }
+
+    /* If you're using a flex or grid container for layout */
+    .container {
+        display: block;
+        /* Stack the items on small screens */
+        /* Or adjust your flex/grid properties accordingly */
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Adjust the max-width as needed */
+    h2 {
+        font-size: smaller;
+        /* Use a smaller font size */
+        margin-top: 20px;
+        /* Add space between the title and the image */
+        /* Other styles to fix overlapping */
+    }
+
+    .profile-image {
+        width: 100%;
+        /* Make the image responsive */
+        height: auto;
+        /* Maintain the aspect ratio */
+    }
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    /* Stack the items vertically on small screens */
+    align-items: center;
+    /* Align items to the center */
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+    }
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* One column layout for small screens */
+    gap: 10px;
+    /* Space between grid items */
+}
+
+@media (min-width: 769px) {
+    .profile-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns for larger screens */
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.site-footer {
+    margin-top: auto;
+    /* Push footer to the bottom */
+
+    /* Dark background for the footer */
+
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-content a {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.footer-content img {
+    width: 24px;
+    /* Set the size of the icon */
+    height: auto;
+}
+
+/* Ensures proper scaling of footer content on smaller screens */
+@media (max-width: 768px) {
+    .footer-content a {
+        margin: 0 10px;
+    }
+}
+
+.site-footer {
+    text-align: center;
+    padding: 5px;
+
+}
+
+.footer-icon {
+    height: 50px;
+    /* Adjust as needed */
+    width: auto;
+}
+
+.resume-button {
+    display: inline-block;
+    background-color: #57b10f;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+    background-color: rgba(255, 255, 255, );
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    /* This prevents horizontal scroll */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(#F3BADB, #F6D19C);
+}
+
+.project p {
+    font-family: cursive;
+    color: #3333;
+}
+
+header {
+    background: #69D31D;
+    /* Example background color, change as needed */
+    color: black;
+    /* Example text color, change as needed */
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 3.5rem;
+    /* Adjust size as needed */
+}
+
+@media (max-width: 600px) {
+    header {
+        font-size: 1.4rem;
+        /* Smaller font size */
+        padding: 0.8rem 0;
+        /* Less padding */
+    }
+}
+
+/* When the screen size is 400px or less */
+@media (max-width: 750px) {
+    header {
+        font-size: 2.5rem;
+        /* Even smaller font size */
+        padding: 0.6rem 0;
+        /* Even less padding */
+    }
+}
+
+.about-me p {
+    font-family: cursive;
+    padding-bottom: 20px;
+}
+
+/* Specific styles for About Me title */
+.about-me h2 {
+    font-size: 2.5rem;
+
+}
+
+/* Specific styles for My Portfolio title */
+.portfolio h2 {
+    font-size: 2.5rem;
+    /* Change this value as desired */
+    /* other styles */
+}
+
+/* Base styles for larger screens */
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    /* Making the image round */
+    margin-right: 20px;
+    /* Add some space between image and text */
+}
+
+.about-me-content p {
+    margin: 0;
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+/* Styles for mobile screens */
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+        /* Centering the text for mobile screens */
+    }
+
+    .profile-container {
+        flex-direction: column;
+    }
+
+    .profile-image {
+        margin-bottom: 20px;
+        /* Add some space between image and text for mobile */
+    }
+
+    .profile-image img {
+        width: 100%;
+        /* Adjust the image width to be responsive */
+        height: auto;
+        /* Adjust the image height automatically */
+        max-width: 200px;
+        /* Maximum size for the image */
+        margin-right: 0;
+        /* Remove the margin right */
+        margin-top: 70px;
+    }
+
+    .about-me-content p {
+        font-size: .9em;
+        /* You can adjust the font size for smaller screens if needed */
+    }
+}
+
+.profile-container {
+    margin-top: 100px;
+    padding-bottom: 10%;
+    /* Adjust this value to the desired amount of space */
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        margin-top: 50px;
+        /* Adjust this value based on your design preference for mobile */
+    }
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    /* or column, depending on your design */
+    align-items: center;
+    /* This will vertically center align the items if flex-direction is row */
+    justify-content: center;
+    /* This will horizontally center the items */
+    max-width: 800px;
+    /* This is an arbitrary value; adjust it to suit your design */
+    margin: 0 auto;
+    /* This will center the container */
+}
+
+/* Responsive adjustments for larger screens */
+@media (min-width: 1024px) {
+
+    /* Adjust this value to the breakpoint you need */
+    .about-me-content,
+    .profile-image {
+        flex: 1;
+    }
+}
+
+.about-me {
+    /* Other styles... */
+    padding-top: 60px;
+    /* Adjust the value as needed */
+}
+
+/* Base styling for the resume section */
+.resume-section {
+    background-color: #F3F4F6; /* Light grey background for contrast */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px; /* Restricts the width of the section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Styling for headers within the resume section */
+.resume-section h2 {
+    color: #333;
+    font-family: 'Lobster', cursive;
+    font-size: 28px; /* Slightly smaller than the main header for hierarchy */
+    margin-bottom: 10px;
+}
+
+/* Styling for unordered lists within the resume section */
+.resume-section ul {
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0;
+}
+
+/* Styling for list items within the resume section */
+.resume-section li {
+    font-size: 16px;
+    color: #666; /* Darker text for readability */
+    margin-bottom: 5px;
+    line-height: 1.5; /* Better readability for list items */
+}
+
+/* Styling for links within the resume section */
+.resume-section a {
+    color: #69D31D; /* Color to match the theme */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.resume-section a:hover {
+    text-decoration: underline; /* Underline on hover for better user interaction */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .resume-section {
+        margin: 20px 10px; /* Smaller margin for smaller screens */
+        padding: 15px; /* Slightly smaller padding */
+    }
+
+    .resume-section h2 {
+        font-size: 24px; /* Smaller font size for smaller screens */
+    }
+
+    .resume-section li {
+        font-size: 14px; /* Smaller font size for better readability on small screens */
+    }
+}
+
+/* Base styling for the resume section */
+.resume-section {
+    background-color: #F3F4F6; /* Light grey background for contrast */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px; /* Restricts the width of the section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Centering and styling the main header */
+h1 {
+    text-align: center; /* Center align the header */
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 60px; 
+    padding-bottom: 40px;
+}
+
+/* Styling for headers within the resume section */
+.resume-section h2, .resume-section h3 {
+    font-weight: bold; /* Make h2 and h3 bold */
+    color: #333;
+    font-family: 'Lobster', cursive;
+    font-size: 28px; /* Slightly smaller than the main header for hierarchy */
+    margin-bottom: 10px;
+}
+
+/* Styling for unordered lists within the resume section */
+.resume-section ul {
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0;
+}
+
+/* Styling for list items within the resume section */
+.resume-section li {
+    font-size: 16px;
+    color: #F3BADB, #F6D19C; /* Darker text for readability */
+    margin-bottom: 5px;
+    line-height: 1.5; /* Better readability for list items */
+}
+
+/* Styling for links within the resume section */
+.resume-section a {
+    color: #69D31D; /* Color to match the theme */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.resume-section a:hover {
+    text-decoration: underline; /* Underline on hover for better user interaction */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .resume-section {
+        margin: 20px 10px; /* Smaller margin for smaller screens */
+        padding: 15px; /* Slightly smaller padding */
+    }
+
+    .resume-section h2, .resume-section h3 {
+        font-size: 24px; /* Smaller font size for smaller screens */
+    }
+
+    .resume-section li {
+        font-size: 14px; /* Smaller font size for better readability on small screens */
+    }
+}
+
+/* Base styling for the resume section */
+.resume-section {
+    background-color: #F3F4F6; /* Light grey background for contrast */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px; /* Restricts the width of the section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Centering and styling the main header in the resume section */
+.resume-section h1 {
+    text-align: center; /* Center align the header */
+    color: black; /* Change color to black */
+    font-family: 'Lobster', cursive;
+    font-size: 60px; /* Adjust size as needed */
+}
+
+/* Styling for headers within the resume section */
+.resume-section h2, .resume-section h3 {
+    font-weight: bold; /* Make h2 and h3 bold */
+    color: #333;
+    font-family: cursive;
+    font-size: 28px; /* For hierarchy */
+    margin-bottom: 10px;
+}
+
+/* Styling for unordered lists within the resume section */
+.resume-section ul {
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0;
+}
+
+/* Styling for list items within the resume section */
+.resume-section li {
+    font-size: 20px;
+    color: #666; /* Darker text for readability */
+    margin-bottom: 5px;
+    line-height: 1.5; /* Better readability for list items */
+}
+
+/* Styling for links within the resume section */
+.resume-section a {
+    color: #69D31D; /* Color to match the theme */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.resume-section a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .resume-section {
+        margin: 20px 10px; /* Smaller margin for smaller screens */
+        padding: 15px; /* Slightly smaller padding */
+    }
+
+    .resume-section h2, .resume-section h3 {
+        font-size: 24px; 
+    }
+
+    .resume-section li {
+        font-size: 14px; /* Smaller font size for better readability */
+    }
+}
+
+.about-me .about-me-title {
+    /* Your existing styles for the h2 title */
+    position: absolute; /* Default positioning */
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #air-balloon {
+        min-height: 10vh;
+        padding-bottom: 20%;
+        min-width: 15vh;
+    }
+}
+
